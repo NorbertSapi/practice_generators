@@ -1,5 +1,6 @@
 # This is a sample Python script to practice the usage of the generators in Python.
 # EXERCISE 1: Fibonacci numbers
+'''
 def fibonacci1(number):
     count = 0
     num1, num2 = 0, 1
@@ -17,6 +18,7 @@ for i in fin:
     print(i)
 
 
+# Exercise 2: Power Function
 def power_number(num):
     return num * num
 
@@ -39,3 +41,16 @@ test2 = get_square2(11)
 print("This is a for loop to return power function:")
 for i in test2:
     print(i)
+'''
+
+# Exercise 3: print even numbers.
+print("EXERCISE 3\nEven Number:")
+
+
+def even_numbers(num):
+    for i in range(num):
+        if i % 2 == 0:
+            yield i
+
+
+print(list(even_numbers(20)))
