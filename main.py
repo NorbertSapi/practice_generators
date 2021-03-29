@@ -26,11 +26,13 @@ def power_number(num):
     return num * num
 
 
+# this is the square function to return the power of given numbers in a list.
 def get_square1(num):
     for i2 in range(num):
         yield power_number(i2)
 
 
+# this is a square function to return the power of numbers in a for loop.
 def get_square2(num):
     for j2 in range(num):
         yield power_number(j2)
